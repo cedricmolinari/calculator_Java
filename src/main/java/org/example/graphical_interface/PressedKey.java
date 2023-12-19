@@ -1,4 +1,4 @@
-package org.example;
+package org.example.graphical_interface;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

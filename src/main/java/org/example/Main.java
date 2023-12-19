@@ -1,7 +1,6 @@
 package org.example;
 
-import java.math.BigDecimal;
-import java.util.*;
+import org.example.graphical_interface.UserInterface;
 
 public class Main {
 

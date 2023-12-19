@@ -1,10 +1,9 @@
-package org.example;
+package org.example.graphical_interface;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
