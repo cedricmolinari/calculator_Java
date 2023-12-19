@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bcf1e7e5-5999-401d-a68b-65f049538530" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CalculatorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EnhanceButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PressedKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ScientificCalculation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ScientificCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SimpleCalculation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SimpleCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserInterface.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2YOt5htWAnllChE66NCk2ZnqBfu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cedricm/Desktop/Projets code/Entrainement/calculatrice_java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcf1e7e5-5999-401d-a68b-65f049538530" name="Changes" comment="" />
+      <created>1700408272564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700408272564</updated>
+      <workItem from="1700408273571" duration="6805000" />
+      <workItem from="1700428310474" duration="4404000" />
+      <workItem from="1700517492853" duration="2173000" />
+      <workItem from="1700543679278" duration="3034000" />
+      <workItem from="1700601444745" duration="4566000" />
+      <workItem from="1700635811001" duration="3793000" />
+      <workItem from="1700651025594" duration="33000" />
+      <workItem from="1700688481266" duration="619000" />
+      <workItem from="1701017905002" duration="3635000" />
+      <workItem from="1701122543609" duration="15000" />
+      <workItem from="1701534849267" duration="497000" />
+      <workItem from="1701629806607" duration="5133000" />
+      <workItem from="1701723754614" duration="3780000" />
+      <workItem from="1701753946422" duration="2370000" />
+      <workItem from="1701810535269" duration="3177000" />
+      <workItem from="1701815252694" duration="4442000" />
+      <workItem from="1701984596794" duration="598000" />
+      <workItem from="1702272891155" duration="1607000" />
+      <workItem from="1702329923852" duration="597000" />
+      <workItem from="1702406615611" duration="1114000" />
+      <workItem from="1702450287757" duration="3473000" />
+      <workItem from="1702502466114" duration="2662000" />
+      <workItem from="1702531813898" duration="2194000" />
+      <workItem from="1702534086352" duration="16000" />
+      <workItem from="1702589801117" duration="628000" />
+      <workItem from="1702590466862" duration="8785000" />
+      <workItem from="1702837355495" duration="3459000" />
+      <workItem from="1702934552038" duration="58000" />
+      <workItem from="1702934618022" duration="3197000" />
+      <workItem from="1702963261082" duration="2689000" />
+      <workItem from="1703019155733" duration="3122000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
