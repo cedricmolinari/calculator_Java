@@ -3,13 +3,13 @@ package org.example.calculation;
 import java.math.BigDecimal;
 
 public interface SimpleCalculation {
-    BigDecimal additionner(BigDecimal a, BigDecimal b);
+    BigDecimal add(BigDecimal a, BigDecimal b);
 
-    BigDecimal soustraire(BigDecimal a, BigDecimal b);
+    BigDecimal substract(BigDecimal a, BigDecimal b);
 
-    BigDecimal multiplier(BigDecimal a, BigDecimal b);
+    BigDecimal multiply(BigDecimal a, BigDecimal b);
 
-    BigDecimal diviser(BigDecimal a, BigDecimal b);
+    BigDecimal divide(BigDecimal a, BigDecimal b);
 
 
 }

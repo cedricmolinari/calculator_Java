@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcf1e7e5-5999-401d-a68b-65f049538530" name="Changes" comment="first commit" />
+    <list default="true" id="bcf1e7e5-5999-401d-a68b-65f049538530" name="Changes" comment="creating packages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calculation/ScientificCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calculation/ScientificCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calculation/ScientificCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calculation/ScientificCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calculation/SimpleCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calculation/SimpleCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/calculation/SimpleCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/calculation/SimpleCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/graphical_interface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/graphical_interface/UserInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2YOt5htWAnllChE66NCk2ZnqBfu" />
@@ -46,6 +58,26 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.example" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="calculatrice_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,7 +117,15 @@
       <workItem from="1702934552038" duration="58000" />
       <workItem from="1702934618022" duration="3197000" />
       <workItem from="1702963261082" duration="2689000" />
-      <workItem from="1703019155733" duration="3592000" />
+      <workItem from="1703019155733" duration="4967000" />
+      <workItem from="1703107065965" duration="3028000" />
+      <workItem from="1703193508365" duration="3214000" />
+      <workItem from="1703222813393" duration="11492000" />
+      <workItem from="1703626150990" duration="597000" />
+      <workItem from="1703627824820" duration="2186000" />
+      <workItem from="1703713105253" duration="6464000" />
+      <workItem from="1704289440123" duration="8656000" />
+      <workItem from="1704441575289" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1703024098723</created>
@@ -94,14 +134,75 @@
       <option name="project" value="LOCAL" />
       <updated>1703024098723</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="deleting main to prepare graphical">
+      <created>1703024388621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703024388621</updated>
+    </task>
+    <task id="LOCAL-00003" summary="creating packages">
+      <created>1703024733230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703024733230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="graphic_Interface" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="deleting main to prepare graphical" />
+    <MESSAGE value="creating packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating packages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.example.calculation.CalculatorException" package="org.example.calculation" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="14" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/graphical_interface/UserInterface.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

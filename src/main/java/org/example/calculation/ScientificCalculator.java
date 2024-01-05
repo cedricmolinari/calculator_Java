@@ -7,12 +7,12 @@ import java.math.RoundingMode;
 public class ScientificCalculator implements ScientificCalculation {
     MathContext mc = new MathContext(4, RoundingMode.HALF_EVEN);
     @Override
-    public BigDecimal racineCarree(BigDecimal a) {
+    public BigDecimal squareRoot(BigDecimal a) {
         return a.sqrt(mc);
     }
 
     @Override
-    public BigDecimal eleverAuCarre(BigDecimal a) {
+    public BigDecimal square(BigDecimal a) {
         return a.multiply(a);
     }
 
