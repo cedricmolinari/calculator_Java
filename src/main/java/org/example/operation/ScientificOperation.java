@@ -1,10 +1,12 @@
-package org.example.calculation;
+package org.example.operation;
+
+import org.example.Utilities.CalculatorException;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
 
-public class ScientificCalculator implements ScientificCalculation {
+public class ScientificOperation implements IScientificOperation {
     MathContext mc = new MathContext(4, RoundingMode.HALF_EVEN);
     @Override
     public BigDecimal squareRoot(BigDecimal a) {
@@ -23,6 +25,5 @@ public class ScientificCalculator implements ScientificCalculation {
         } catch (ArithmeticException e) {
             throw new CalculatorException("Erreur : " + e.getMessage());
         }
-
     }
 }

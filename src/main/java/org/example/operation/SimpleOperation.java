@@ -1,9 +1,11 @@
-package org.example.calculation;
+package org.example.operation;
+
+import org.example.Utilities.CalculatorException;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class SimpleCalculator implements SimpleCalculation {
+public class SimpleOperation implements ISimpleOperation {
 
 
     @Override

@@ -1,8 +1,8 @@
-package org.example.calculation;
+package org.example.operation;
 
 import java.math.BigDecimal;
 
-public interface ScientificCalculation {
+public interface IScientificOperation {
     BigDecimal squareRoot(BigDecimal a);
 
     BigDecimal square(BigDecimal a);

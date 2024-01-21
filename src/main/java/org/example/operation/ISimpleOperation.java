@@ -1,8 +1,8 @@
-package org.example.calculation;
+package org.example.operation;
 
 import java.math.BigDecimal;
 
-public interface SimpleCalculation {
+public interface ISimpleOperation {
     BigDecimal add(BigDecimal a, BigDecimal b);
 
     BigDecimal substract(BigDecimal a, BigDecimal b);
