@@ -1,6 +1,5 @@
-package org.example;
+package org.example.graphical_interface;
 
-import org.example.graphical_interface.ButtonHandle;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,51 +17,48 @@ public class UserInterface extends JFrame {
     public UserInterface() {
         super("Calculatrice");
         buttonHandle = new ButtonHandle(displayField);
+        getContentPane().setBackground(Color.LIGHT_GRAY);
 
         displayField.setText("0");
         displayField.setSize(200, 50);
 
         buttonList = new ArrayList<>();
         
-        setSize(300, 200);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //setSize(300, 200);
+
+
+        displayField.setHorizontalAlignment(JTextField.RIGHT);
+        add(displayField, BorderLayout.NORTH);
 
         // layout creating and setting
-        setLayout(new GridLayout(5, 4, 5, 5));
+        setLayout(new GridLayout(6, 4, 5, 5));
 
         // add new components
             //number
         createButton(button1, 0);
         createButton(button2, 1);
         createButton(button3, 2);
-        createButton(button4, 3);
-        createButton(button5, 4);
-        createButton(button6, 5);
-        createButton(button7, 6);
-        createButton(button8, 7);
-        createButton(button9, 8);
-        createButton(button0, 9);
-
-            //simple operators
-        createButton(buttonAdd, 10);
-        createButton(buttonSubtract, 11);
-        createButton(buttonMultiply, 12);
-        createButton(buttonDivide, 13);
-        createButton(buttonEqual, 14);
-
-            //scientific operators
-
-            //special buttons
-        createButton(buttonPercent, 15);
+        createOperationButton(buttonAdd, 3);
+        createButton(button4, 4);
+        createButton(button5, 5);
+        createButton(button6, 6);
+        createOperationButton(buttonSubtract, 7);
+        createButton(button7, 8);
+        createButton(button8, 9);
+        createButton(button9, 10);
+        createOperationButton(buttonMultiply, 11);
+        createButton(buttonPercent, 12);
+        createButton(button0, 13);
+        createButton(buttonMinus, 14);
+        createOperationButton(buttonDivide, 15);
         createButton(buttonClearAll, 16);
         createButton(buttonClearEntry, 17);
-        createButton(buttonMinus, 18);
+        createButton(buttonEqual, 18);
 
+        //add(buttonPanel, BorderLayout.CENTER);
 
-
-        // add the display field to the window
-        add(displayField);
-
+        pack();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // set the window visible
         setVisible(true);
     }
@@ -73,9 +69,13 @@ public class UserInterface extends JFrame {
         add(button);
         buttonList.add(index, button);
     }
+    private void createOperationButton(String label, int index) {
+        JButton button = new JButton(label);
+        button.setBackground(Color.ORANGE);
+        button.setForeground(Color.WHITE);
 
-
-
-
-
+        button.addActionListener(e -> buttonHandle.handleButtonPress(e.getActionCommand()));
+        add(button);
+        buttonList.add(index, button);
+    }
 }

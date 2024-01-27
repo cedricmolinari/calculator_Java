@@ -1,7 +1,5 @@
 package org.example.operation;
 
-import org.example.Utilities.CalculatorException;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 

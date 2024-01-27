@@ -1,10 +1,10 @@
 package org.example.graphical_interface;
 
-import org.example.Utilities.MathUtils;
 import org.example.operation.SimpleOperation;
 
 import javax.swing.*;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -26,9 +26,9 @@ public class ButtonHandle {
     String previousOperator;
     String currentText;
     private static final int MAX_DIGITS = 4; // define the maximum of numbers you can enter for a number
-    MathUtils mathUtils = new MathUtils();
     boolean isSpecialButton = false;
     public void handleButtonPress(String buttonValue) {
+        // loop in order to define if user has taped a special button
         for (int i = 0; i < specialButton.toArray().length; i++) {
             if (Objects.equals(specialButton.get(i), buttonValue)) {
                 isSpecialButton = true;
@@ -76,8 +76,10 @@ public class ButtonHandle {
     private void doSpecialAction(String specialButton) {
         switch (specialButton) {
             case "%":
-                displayField.setText(mathUtils.convertToPercent(String.valueOf(currentNumber)));
-                currentNumber = new BigDecimal(displayField.getText());
+                BigDecimal percentNumber = currentNumber.divide(BigDecimal.valueOf(100));
+                String percentToDisplay = percentNumber.toString();
+                displayField.setText(percentToDisplay);
+                currentNumber = percentNumber;
                 break;
             case "C":
                 clearOperation();
@@ -91,19 +93,15 @@ public class ButtonHandle {
                     currentText = displayField.getText().substring(0, displayField.getText().length() - 1);
                     displayField.setText(currentText);
                     currentNumber = new BigDecimal(currentText);
-
                 }
                 break;
             case "+/-":
                 currentNumber = currentNumber.negate();
                 displayField.setText(String.valueOf(currentNumber));
+                break;
         }
         isSpecialButton = false;
     }
-
-
-
-    // KEEP THIS FUNCTION HERE
     private void appendToDisplay(String number) {
         currentText = displayField.getText();
         // if it's the first number of a new entered number
