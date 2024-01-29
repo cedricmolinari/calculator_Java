@@ -12,48 +12,26 @@ public class UserInterface extends JFrame {
     String button1 = "1", button2 = "2", button3 = "3", button4 = "4", button5 = "5", button6 = "6", button7 = "7",
             button8 = "8", button9 = "9", button0 = "0", buttonAdd = "+", buttonSubtract = "-", buttonMultiply = "*",
             buttonDivide = "/", buttonEqual = "=", buttonPercent = "%", buttonClearAll = "C", buttonClearEntry = "CE",
-            buttonMinus = "+/-";
-    List<JButton> buttonList;
+            buttonMinus = "+/-", buttonComma = ".";
+    // List<JButton> buttonList;
     public UserInterface() {
         super("Calculatrice");
         buttonHandle = new ButtonHandle(displayField);
+
         getContentPane().setBackground(Color.LIGHT_GRAY);
+        setLayout(new BorderLayout());
 
+        // Configure display field
         displayField.setText("0");
-        displayField.setSize(200, 50);
-
-        buttonList = new ArrayList<>();
-        
-        //setSize(300, 200);
-
-
         displayField.setHorizontalAlignment(JTextField.RIGHT);
         add(displayField, BorderLayout.NORTH);
 
-        // layout creating and setting
-        setLayout(new GridLayout(6, 4, 5, 5));
+        // Create panel for buttons and set its layout to GridLayout
+        JPanel buttonPanel = new JPanel(new GridLayout(5, 5, 5, 5));
 
-        // add new components
-            //number
-        createButton(button1, 0);
-        createButton(button2, 1);
-        createButton(button3, 2);
-        createOperationButton(buttonAdd, 3);
-        createButton(button4, 4);
-        createButton(button5, 5);
-        createButton(button6, 6);
-        createOperationButton(buttonSubtract, 7);
-        createButton(button7, 8);
-        createButton(button8, 9);
-        createButton(button9, 10);
-        createOperationButton(buttonMultiply, 11);
-        createButton(buttonPercent, 12);
-        createButton(button0, 13);
-        createButton(buttonMinus, 14);
-        createOperationButton(buttonDivide, 15);
-        createButton(buttonClearAll, 16);
-        createButton(buttonClearEntry, 17);
-        createButton(buttonEqual, 18);
+        // Add buttons to buttonPanel
+        addButtonsToPanel(buttonPanel);
+        add(buttonPanel, BorderLayout.CENTER);
 
         //add(buttonPanel, BorderLayout.CENTER);
 
@@ -63,19 +41,39 @@ public class UserInterface extends JFrame {
         setVisible(true);
     }
 
-    private void createButton(String label, int index) {
+    private void addButtonsToPanel(JPanel panel) {
+        panel.add(createButton(button1));
+        panel.add(createButton(button2));
+        panel.add(createButton(button3));
+        panel.add(createOperationButton(buttonAdd));
+        panel.add(createButton(button4));
+        panel.add(createButton(button5));
+        panel.add(createButton(button6));
+        panel.add(createOperationButton(buttonSubtract));
+        panel.add(createButton(button7));
+        panel.add(createButton(button8));
+        panel.add(createButton(button9));
+        panel.add(createOperationButton(buttonMultiply));
+        panel.add(createButton(buttonClearEntry));
+        panel.add(createButton(button0));
+        panel.add(createButton(buttonPercent));
+        panel.add(createOperationButton(buttonDivide));
+        panel.add(createButton(buttonClearAll));
+        panel.add(createButton(buttonComma));
+        panel.add(createButton(buttonMinus));
+        panel.add(createOperationButton(buttonEqual));
+    }
+
+    private JButton createButton(String label) {
         JButton button = new JButton(label);
         button.addActionListener(e -> buttonHandle.handleButtonPress(e.getActionCommand()));
-        add(button);
-        buttonList.add(index, button);
+        return button;
     }
-    private void createOperationButton(String label, int index) {
+    private JButton createOperationButton(String label) {
         JButton button = new JButton(label);
         button.setBackground(Color.ORANGE);
         button.setForeground(Color.WHITE);
-
         button.addActionListener(e -> buttonHandle.handleButtonPress(e.getActionCommand()));
-        add(button);
-        buttonList.add(index, button);
+        return button;
     }
 }

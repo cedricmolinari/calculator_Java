@@ -16,7 +16,7 @@ public class ButtonHandle {
         this.displayField = displayField;
     }
 
-    List<String> specialButton = Arrays.asList("%", "C", "CE", "+/-");
+    List<String> specialButton = Arrays.asList("%", "C", "CE", "+/-", ".");
     private BigDecimal previousNumber = BigDecimal.ZERO;
     BigDecimal result;
     SimpleOperation simpleCalculator = new SimpleOperation();
@@ -99,6 +99,14 @@ public class ButtonHandle {
                 currentNumber = currentNumber.negate();
                 displayField.setText(String.valueOf(currentNumber));
                 break;
+            case ".":
+                currentText = displayField.getText();
+                if (!currentText.contains(".")) {
+                    displayField.setText(currentText + '.');
+                    isFirstNumberOfNumber = false;
+                } else {
+                    displayField.setText(currentText);
+                }
         }
         isSpecialButton = false;
     }
